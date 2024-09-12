@@ -17,7 +17,7 @@ def index():
 
 
 if __name__ == '__main__':
-    t = threading.Thread(target=lambda: app.run('0.0.0.0', 8000, True))
+    t = threading.Thread(target=lambda: app.run('0.0.0.0', 8000, False))
     t.start()
     import data_entry
     
