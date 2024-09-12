@@ -25,6 +25,7 @@ def add_entry():
         if not roll: return jsonify(dict(success=False, msg='Invalid roll.'))
         if len(str(year)) != 4: return jsonify(dict(success=False, msg='Invalid year.'))
         if board.upper() not in all_boards: return jsonify(dict(success=False, msg='Invalid board. Should be one of ' + ','.join(all_boards)))
+        board = board.upper()
         if not SSCResult.query.filter_by(roll=roll, year=year, board=board).first():
             db.session.add(SSCResult(roll=roll, year=year, board=board))
             db.session.commit()
