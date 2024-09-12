@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask
+pyrogram
+tgcrypto
+asyncio
+aiohttp
+requests
+psycopg2
