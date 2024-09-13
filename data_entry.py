@@ -1,5 +1,18 @@
 from app import app, SSCResult, db
-from common import all_boards
+
+all_boards = [
+    "BARISHAL",
+    "CHATTOGRAM",
+    "CUMILLA",
+    "DHAKA",
+    "DINAJPUR",
+    "JASHORE",
+    "MADRASAH",
+    "RAJSHAHI",
+    "SYLHET",
+    "MYMENSINGH",
+    "TECHNICAL"
+]
 
 with open('log.txt') as f: d=f.read()
 
